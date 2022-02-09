@@ -1,6 +1,6 @@
 body {
   font-family: Roboto;
-  background: #8E0E00;
+  background: #00e1ff;
     /* fallback for old browsers */
     background: -webkit-linear-gradient(to left, #00e1ff, #1F1C18);
     /* Chrome 10-25, Safari 5.1-6 */
@@ -81,7 +81,7 @@ button {
   font-weight: bold;
   display: block;
   margin: 30px auto;
-  background: #AD133A;
+  background: #00e1ff;
   border-radius: 5px;
   width: 200px;
   height: 50px;
@@ -90,7 +90,7 @@ button {
 }
 
 button:hover {
-  background: #4c2827;
+  background: #0090a3;
   border-bottom-color: #111;
 }
 
