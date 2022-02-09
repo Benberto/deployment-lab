@@ -1,53 +1,65 @@
 body {
+  height: 100vh;
   font-family: Roboto;
   background: #00e1ff;
     /* fallback for old browsers */
-    background: -webkit-linear-gradient(to bottom left, #00e1ff, #006d64);
+    background: -webkit-linear-gradient(to bottom right, #01dac7, #016f77);
     /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to bottom left, #00e1ff, #006d64);
+    background: linear-gradient(to bottom right, #01dac7, #016f77);
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
+.peopleamt {
+  margin-top: 0px;
+}
+
 #container {
-  height: 425px;
+  display: flex;
+  flex-direction: column;
+  align-items: auto;
+  height: 500px;
   width: 360px;
   margin: 100px auto;
   background: #f7f7f7;
-  box-shadow: 3px 3px 3px #00e1ff;
-  border-radius: 20px;
+  box-shadow: 3px 3px 3px #016f77;
+  border-radius: 10px;
   -webkit-border-radius: 10px;
-  -moz-border-radius: 20px;
+  -moz-border-radius: 10px;
 }
 
-h1 {
+#heading {
+  text-align: center;
+  width: 360px;
   background: #000000;
   color: white;
   margin: 0;
-  padding: 10px 100px;
   text-transform: uppercase;
-  font-size: 18px;
+  font-size: 12px;
   font-weight: normal;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
 }
 
-p {
-  padding-left: 20px;
+#calculator {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
+
+
 
 form input[type="text"] {
   width: 90px;
 }
 
-input {
-  padding-left: 20px;
-}
+
 
 #billamt {
+  border: 1px solid black;
   font-size: 14px;
   /*color: #2980b9;*/
   background-color: #f7f7f7;
-  width: 60%;
+  width: 50%;
   padding: 5px 5px 8px 8px;
 }
 
@@ -58,10 +70,10 @@ input {
 }
 
 #peopleamt {
-  width: 50%;
+  border: 1px solid black;
+  width: 29%;
   padding: 5px 5px 8px 8px;
-  margin-left: 30px;
-  
+  margin-right: 54px;
   background-color: #f7f7f7;
   font-size: 14px;
 }
@@ -70,27 +82,29 @@ input {
   display: inline;
 }
 
+
 #serviceQual {
+  width: 60%;
   padding: 5px 5px 8px 8px;
   margin-left: 12px;
   font-size: 14px;
 }
 
 button {
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   font-weight: bold;
   display: block;
   margin: 30px auto;
   background: #007281;
   border-radius: 5px;
-  width: 200px;
-  height: 50px;
-  font-size: 17px;
+  width: 175px;
+  height: 40px;
+  font-size: 20px;
   color: white;
 }
 
 button:hover {
-  background: #007786;
+  background: #004852;
   border-bottom-color: #111;
 }
 

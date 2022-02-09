@@ -9,19 +9,22 @@
 </head>
 <body>
   <div id="container">
-    <h1>Tip Calculator</h1>
+    <div id="heading">
+      <h1>Tip Calculator</h1>
+    </div>
+    
     <div id="calculator">
   
   
       <form>
         <p>How much was your bill?
           <p>
-            $ <input id="billamt" type="text" placeholder="Bill Amount">
+              $ <input id="billamt" type="text" placeholder="Bill Amount">
   
             <p>How was your service?
               <p>
                 <select id="serviceQual">
-              <option disabled selected value="0">-- Choose an Option --</option>
+              <option disabled selected value="0">Percentage</option>
               <option value="0.3">30&#37; &#45; Outstanding</option>
               <option value="0.2">20&#37; &#45; Great</option>
               <option value="0.15">15&#37; &#45; Good</option>
@@ -30,8 +33,9 @@
           </select>
   
       </form>
-      <p>How many people are sharing the bill?</p>
-      <input id="peopleamt" type="text" placeholder="Number of People"> people
+      <p class="peopleamt">How many people are sharing the bill?</p>
+      <input name="peopleamt" id="peopleamt" type="text" placeholder="Split by">
+     
       <button type="button" id="calculate">Calculate!</button>
   
     </div>
