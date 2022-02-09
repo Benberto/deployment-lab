@@ -2,9 +2,9 @@ body {
   font-family: Roboto;
   background: #00e1ff;
     /* fallback for old browsers */
-    background: -webkit-linear-gradient(to left, #00e1ff, #1F1C18);
+    background: -webkit-linear-gradient(to bottom left, #00e1ff, #006d64);
     /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to left, #00e1ff, #1F1C18);
+    background: linear-gradient(to bottom left, #00e1ff, #006d64);
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
@@ -81,7 +81,7 @@ button {
   font-weight: bold;
   display: block;
   margin: 30px auto;
-  background: #00e1ff;
+  background: #007281;
   border-radius: 5px;
   width: 200px;
   height: 50px;
@@ -90,7 +90,7 @@ button {
 }
 
 button:hover {
-  background: #0090a3;
+  background: #007786;
   border-bottom-color: #111;
 }
 
