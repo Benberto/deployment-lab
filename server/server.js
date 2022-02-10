@@ -18,7 +18,6 @@ app.use(cors());
 app.use(express.static('public'))
 
 app.get('/' , (req, res) => {
-    rollbar.err("Something went wrong!")
     res.sendFile(path.join(__dirname, '../public/index.html'))
 })
 
