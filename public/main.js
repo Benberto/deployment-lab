@@ -15,16 +15,16 @@ if(billAmt.value === "" || serviceQual.value == 0){
   return;
 }
 
- else if(peopleAmt.value === "" || peopleAmt.value <= 1){
-   peopleAmt.value = 1;
-
-   document.getElementById("each").style.display = "none";
-
-  } else{
-
-   document.getElementById("each").style.display = "block";
-
- }
+else if(peopleAmt.value === "" || peopleAmt.value <= 1){
+  peopleAmt.value = 1;
+  
+  document.getElementById("each").style.display = "none";
+  
+} else{
+  
+  document.getElementById("each").style.display = "block";
+  
+}
 
 let total = (billAmt.value * serviceQual.value) / peopleAmt.value;
 
