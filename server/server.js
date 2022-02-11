@@ -19,19 +19,11 @@ app.use(cors());
 app.use(express.static('public'))
 
 app.get('/' , (req, res) => {
+    rollbar.error('Error')
     res.sendFile(path.join(__dirname, '../public/index.html'))
 })
 
-app.get('/test' , (req, res) => {
-  try {
-    doSomething();
-  } catch (e) {
-    Rollbar.error("Something went wrong", e);
-    res.sendStatus(404)
-    return;
-  } 
-  res.status(404).send(res)
-})
+
 
 const port = process.env.PORT || 4000;
 
