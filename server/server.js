@@ -5,8 +5,8 @@ const path = require('path');
 
 const app = express();
 
-var Rollbar = require('rollbar')
-var rollbar = new Rollbar({
+const Rollbar = require('rollbar')
+const rollbar = new Rollbar({
   accessToken: process.env.ROLLBAR_TOKEN,
   captureUncaught: true,
   captureUnhandledRejections: true,
@@ -27,7 +27,8 @@ app.get('/test' , (req, res) => {
     doSomething();
   } catch (e) {
     Rollbar.error("Something went wrong", e);
-  }
+    return;
+  } 
   res.status(404).send(res)
 })
 
